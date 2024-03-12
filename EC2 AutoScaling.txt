@@ -1,0 +1,26 @@
+ EC2--> launch template
+
+I. LAUNCH TEMPLATE
+1. click on create launch template
+2. provide template name
+3. select AMI as Amazon linux 2
+4. proide Instance type as t2.micro
+5. select key pair
+6. provide security group with all traffic 
+7. provide user date 
+8. click launch template
+
+Continue---------->
+1. click on Auto Scaling Groups
+2. Create Auto Scaling Group
+3. select template name which u have created
+4. click on next
+5. In NETWORK select all Availability Zones
+6. click on next again next
+7. In Group size give Desired capacity as->2
+    Min desired capacity--> 2
+    Max desired capacity--> 2
+8. click 3 times next 
+9. create Auto scaling group
+
+

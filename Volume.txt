@@ -1,0 +1,12 @@
+EC2-> Elastic Block Store-> Volumes
+
+I. CREATE VOLUMES
+1. create volumes
+2. select Availability Zone with same as per in the instance provide
+3. create volume
+
+II. ATTACH VOLUME TO THE INSTANCE
+1. select volume
+2. click on action
+3. click on attach volumes
+4. select instance

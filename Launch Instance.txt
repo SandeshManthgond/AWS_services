@@ -1,0 +1,10 @@
+LAUNCH INSTANCE
+
+1. click on EC2
+2. click on create/launch instance
+3. provide instance name
+4. provide AMI
+5. select instance type(t2.micro)
+6. select keypair(window)
+7. launch instance
+

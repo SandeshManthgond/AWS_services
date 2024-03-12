@@ -1,0 +1,19 @@
+Security Groups(Allow incoming Traffic)
+
+[user data is MANDATORY WHILE CREATING SECURITY GROUPS]
+
+FOR USER DATA COMMANDS
+#!/bin/bash
+
+yum update -y
+yum install httpd -y
+systemctl start httpd
+systemctl enable httpd
+
+
+Steps
+1. click on security group
+2. click on add rule
+3. add inbound rule
+4. select anywhere IPv4 from source
+5. save rules

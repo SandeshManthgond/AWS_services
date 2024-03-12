@@ -1,0 +1,125 @@
+I. VPC
+II. Subnets
+III. Routetable
+IV. Gateway
+V. Launch Instance
+VI. configure route table
+    i. assign public subnet
+    ii. assign internet gateway
+
+I. VPC
+1. select VPC only
+2. provide vpc name
+3. IPv4 CIDR----->10.0.0.0/24
+4. create vpc
+
+continue----->
+II. Subnets
+1. click on create subnet
+2.provide vpc which u have created
+3. provide subnet name
+4. select Availability zone as-----> ap-south-1a
+5. IPv4 subnet CIDR block------>10.0.0.0/25
+6. create subnet
+
+continue------------->
+
+III. Route table
+1. click on create route table name
+2. provide route table
+3. select VPC which u have created
+4. create route table
+
+IV. Internet Gateway
+1.click on create Internet Gateway
+2. provide name
+3. create internet gateway
+
+V. launch Instance
+1. name
+2. AMI (Amazon linux 2)
+3. In Network settings edit
+   ----> provide vpc which u have created
+   ----> provide subnet which u have created
+   ----> Auto-assign public IP ("Enable")
+   ----> provide security group with all traffic
+4. launch instance
+
+----ATTACH GATEWAY TO VPC----
+1. click on IGW which u have created
+2. click on action
+3. attach to VPC which u have created
+
+VI. Configure route table
+
+i. Assign public subnet
+1. select route table which u have created
+2. click on action
+3. edit subnet association
+4. save associations
+
+ii. Assign Internet Gateway
+1. select route table which u have created
+2. scroll down click routes
+3. edit rules
+4. add route
+5. select 0.0.0.0/0
+   target as Internet Gateway
+   select Gateway which u have created
+6. save changes
+
+
+-----------------------------------------------------------------------------------------
+
+PRIVATE SUBNET 
+
+I. Subnet
+1. select VPC which you  have created
+2. provide subnet name
+3. select Availability Zone as--> 1a
+4. IPv4 subnet CIDR block as ---->10.0.0.128/25
+5. create subnet
+
+II.Route table for private subnet
+1. click on route table
+2. provide VPC which you have created
+3 create route table
+
+Launch one instance with AMI linux2 instance t2.micro
+in Network settings Edit
+1. select VPC which you have created
+2. select private subnet
+3. Auto-assign public IP should be DISABLE
+4. select security group which you have created
+5. launch instance
+
+[procedure to connect database server]
+
+In the same application server which you created first instance as a root user create private key file with same name which is alraedy existed
+1. sudo su -
+2. vi window.pem  enter
+3. type i and copy key pair and paste 
+4. esc 
+5. :wq   enter
+6. cat window.pem
+7. chmod 400 window.pem  enter
+8. copy example of SSH client and paste
+
+NATGATEWAY(to transmit data from database to internet we need one private route table)
+1. click on NAT Gateway
+2. select PRIVATE Subnet which you cretaed
+3. connectivity type as Public
+4. Allocate Elastic IP
+5. create NAT Gateway
+
+need configuration in priavte route table
+1. select private route table
+2. in routes edit routes select 0.0.0.0 and target as NAT Gateway select which you created
+3. in subnet associations click on that priavte subnet and save associations
+
+
+COMPULSORY DELETE 
+1. NAT Gateway
+2. Elastic Gateway
+
+

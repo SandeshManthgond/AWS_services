@@ -1,0 +1,48 @@
+I. launch template
+II. Auto Scaling Group
+II.Target Groups
+III. Load Balancer
+
+I. LAUNCH TEMPLATE
+1. instance name
+2. AMI--> Amazon linux 2
+3. instance type-> t2.micro
+4. security group-> all traffic 
+5. provide user data
+6. launch instance
+
+Continue---------->
+1. click on Auto Scaling Groups
+2. Create Auto Scaling Group
+3. select template name which u have created
+4. click on next
+5. In NETWORK select all Availability Zones
+6. click on next again next
+7. In Group size give Desired capacity as->2
+    Min desired capacity--> 2
+    Max desired capacity--> 2
+8. click 3 times next 
+9. create Auto scaling group
+
+continue----->
+
+III. CREATE TARGET GROUPS
+1. click on target gruops and click on target groups
+2. choose a target type as Instances
+3. provide target name
+4. select protocol HTTP with port no: 80
+5. IP address type as IPv4
+6. click on next
+7. In Register targets select both instances and click on include as pending below
+8. click target groups
+
+continue---->
+1. click on create load balancer
+2. select load balancer as Application Load Balanacer and click on create
+3. provide load balancer name
+4. In Mappings select all 3 availability zones
+5. provide security group which u have created
+6. In Listeners and routing select target group which you have created
+7. create load balancer
+
+

@@ -1,0 +1,42 @@
+ LAUNCH INSTANCE
+(launch instance is same for all)
+
+1. click on EC2
+2. click on create/launch instance
+3. provide instance name
+4. provide AMI (AMI Linux 2)
+5. select instance type(t2.micro)
+6. select keypair(window)
+7. launch instance
+
+
+I.FOR EC2 INSTANCE CONNECT
+1. select instance and click on connect
+2. select EC2 INSTANCE CONNECT 
+3. final click on connect
+
+II. FOR GITBASH
+1. select instance and click on connect
+2. select SSH Client 
+3. copy example 
+4. go to downloads right click git bash here 
+5. paste example
+
+III. FOR COMMAND PROMPT
+1. select instance and click on connect
+2. select SSH Client 
+3. copy example 
+4. go to downloads select window then paste url
+
+IV. FOR MOBEXTERM
+1. open mobexterm
+2. click on session and click on SSH
+3. for remote host ---- >copy address of PUBLIC IP ADDRESS and paste it
+4. for userspecify name --> "ec2-user"
+5. click on advanced specific settings
+6. select use private keys
+7. go for downloads select window and click on open
+8. click on bookmark and rename session name as ur wish
+9. finally click on Ok
+
+

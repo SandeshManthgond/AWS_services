@@ -1,0 +1,22 @@
+ type S3
+I. CREATE BUCKET
+1. click on create bucket
+2. Object Ownership as ACLs enabled
+3. select Object Ownership as Object writer
+4. unblock all public access
+5. provide tick for I acknowledge 
+6. Bucket Versioning as Enable
+7. create bucket
+
+II. UPLOAD FILES OR FOLDERS IN THE BUCKET
+1. select bucket 
+2. click on upload
+3. select file and upload
+
+III. TO ACCESS/SEE OBJECTS/FILES FROM BUCKET
+1. click on object which u have uploaded
+2. go for permissions
+3. in that select Access control list (ACL) right side edit
+4. Everyone (public access) tick for both read and write
+5. give tick for I understand 
+6. save changes

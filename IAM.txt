@@ -1,0 +1,61 @@
+ IAM 
+
+I.USERS
+
+1. type service name as IAM and click on that
+2. click on Users and click on create users
+3. give tick for Provide user access to the AWS Management Console  
+4. select I want to create an IAM user
+5. click on next once again next
+6. click on create user
+7. give policy name 
+8. finally click on create policy
+------------------------------------------------------
+
+II. POLICIES(ADDING PERMISSIONS TO ACCES THE USER)
+1.create policy
+2. choose device ec2(which you want)
+3. tick for all ec2 actions
+4. select Resources as ALL
+5. click on next
+-------------------------------------------------------
+
+HOW TO ATTACH POLICY to USER
+1. select user and scroll down 
+2. in permission click on add permission
+3. click on attach policies directly 
+4. in that filter select customer managed
+5. select that policy and click next
+6. finally click on add permission
+----------------------------------------------------
+
+III. USER GROUPS
+1. click on user groups click on create group
+2. provide group name
+  (If you need you can add users optional)
+3. attach permission
+4. create group
+----------------------------------------------------
+
+ADD USERS TO GROUP
+1. select group name
+2. click on add users
+3. select users and click on add users
+
+ADD PERMISSIONS TO GROUP
+1. click on add permissions in that select attach policies
+2. select policy and attach polices
+----------------------------------------------------
+
+IV. ROLES
+1. select roles and create role
+2. select Trusted entity type as AWS service
+3. select Use case as EC2 
+4. click on next
+5. add permission give as ec2fullaccess
+6. click on next
+7. provide role name
+8. scroll down and finally create role
+
+
+

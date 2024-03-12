@@ -1,0 +1,39 @@
+STEPS REQUIRED
+1. launch instance
+2. create dashboard
+3. create cloud watch
+4. create alaram
+
+I.launch instance
+
+1. server with AMI as Amazon linux 2 
+2. instance type as t2.micro
+3. with security group allow all traffic
+
+II. CREATE DASHBOARD
+1. type as CloudWatch in a service
+2. click on dashboard and create dashboard
+3. provide dashboard name
+4. In metrices select widget type as Line and click on next
+5. select EC2 --> select Per-Instance Metrics
+6. select CPU Utilization with particular instance
+7. create widget
+
+continue -------->
+III. ALARAM
+comeback to cloud watch and click on Alarams
+1. click on In alaram and create alaram
+2. select metric as EC2 --> Per-Instance Metrics
+3. select CPU Utilization with particular instance and click on select metric
+4. In Conditions select Threshold type as static
+5. Whenever CPU Utilization is Lower than 1 click on next
+6. In Notification click on create new topic
+7. provide topic name and email and click on create topic
+8. In EC2 action click on add EC2 action
+9. select stop this instance
+10. click on next-> provide alaram name ->next->next
+11. create alaram
+
+NOTE: alaram is created by only by giving confirm subscription to ur mail
+
+

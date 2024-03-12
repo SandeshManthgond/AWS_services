@@ -1,0 +1,9 @@
+Steps to create html form in instance and store in bucket and allow too see
+
+1. type vi index.html-----------------------------(save the html file in instance)
+2. type i ----------------------------------------(insert the code)
+3. copy and paste(with cursor) the html code in instance
+4. press esc button ----------------------------(to exit editing code)
+5. type :wq and press enter
+6. type cat index.html-------------------------(to create file in instance)
+7. type "aws s3 cp index.html s3://bucketname/index.html"
